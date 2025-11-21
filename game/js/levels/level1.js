@@ -12,7 +12,12 @@ window.ExpandITGame.renderLevel1 = function(container, onComplete) {
         <div class="l1-container">
             <div class="app-header">
                 <i class="fas fa-arrow-left back-btn"></i>
-                <span class="header-title">New Request</span>
+                <span class="header-title">Customer Portal</span>
+            </div>
+
+            <div class="level-intro">
+                <img src="https://www.expandit.com/catalog/images/Customer%20Service.png.png" class="level-img" alt="Customer">
+                <p><strong>You are the Customer.</strong><br>You have a problem at your location. Use the Self-Service Portal to book a technician instantly. <a href="https://www.expandit.com/en/solutions/customer-portal" target="_blank" style="color: #00f3ff;">Learn More</a></p>
             </div>
             
             <div class="app-input-group">

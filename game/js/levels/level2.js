@@ -6,6 +6,11 @@ window.ExpandITGame.renderLevel2 = function(container, orderData, onComplete) {
 
     container.innerHTML = `
         <div class="l2-container">
+            <div class="level-intro" style="padding: 10px; background: #222;">
+                <img src="https://www.expandit.com/catalog/images/Resource%20Planning%20Board%20and%20Map.png" class="level-img" alt="Dispatcher" style="height: 60px; object-fit: cover;">
+                <p style="font-size: 0.8rem;"><strong>You are the Dispatcher.</strong><br>A new order arrived! Drag it to the right technician. <a href="https://www.expandit.com/en/solutions/resource-planning" target="_blank" style="color: #00f3ff;">See Real Solution</a></p>
+            </div>
+
             <div class="map-view" id="map-dropzone">
                 <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="order-overlay" draggable="true" id="order-card">

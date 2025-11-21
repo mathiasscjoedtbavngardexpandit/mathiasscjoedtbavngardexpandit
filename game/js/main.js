@@ -78,6 +78,7 @@ window.ExpandITGame = window.ExpandITGame || {};
             <h3>Field Master</h3>
             <p>ExpandIT Workflow Sim</p>
             <button id="start-btn" class="app-btn">START SYSTEM</button>
+            <a href="https://www.expandit.com/en/" target="_blank" style="color: #555; font-size: 0.7rem; margin-top: 20px; text-decoration: none;">Powered by ExpandIT</a>
         </div>
     `;
 

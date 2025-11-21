@@ -1,5 +1,32 @@
 /* game/css/levels.css */
 
+/* Level Intro */
+.level-intro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.level-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00f3ff;
+}
+
+.level-intro p {
+    font-size: 0.85rem;
+    color: #ddd;
+    margin: 0;
+    text-align: left;
+}
+
 /* Level 1: Customer */
 .l1-container {
     padding: 20px;
@@ -172,6 +199,19 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    min-height: 200px;
+    z-index: 1;
+}
+
+.wire-svg {
+    z-index: 1;
+}
+
+.wire-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
 }
 
 .wire-socket {
@@ -182,6 +222,7 @@
     margin: 15px 0;
     cursor: pointer;
     position: relative;
+    background: #222;
 }
 
 .wire-socket.red { border-color: #ff4444; }

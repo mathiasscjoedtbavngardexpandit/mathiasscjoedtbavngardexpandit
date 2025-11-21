@@ -1,7 +1,7 @@
 /* game/css/core.css */
 .game-boy-frame {
-    width: 380px; /* Slightly wider for modern UI */
-    height: 650px;
+    width: 620px; /* Wider for better visibility */
+    height: 90vh;
     background-color: #c0c0c0;
     border-radius: 10px 10px 40px 10px;
     margin: 0 auto;
@@ -15,7 +15,7 @@
 
 .screen-border {
     width: 100%;
-    height: 320px; /* Taller screen */
+    height: 620px; /* Taller screen */
     background-color: #777;
     border-radius: 10px 10px 30px 10px;
     padding: 30px 30px 10px 30px;
