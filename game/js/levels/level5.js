@@ -16,16 +16,21 @@ window.ExpandITGame.renderLevel5 = function(container, onComplete) {
         </div>
     `;
 
+    const stage = container.querySelector('.center-stage');
     const cup = container.querySelector('#coffee-cup');
     const bar = container.querySelector('#stress-bar');
 
-    cup.addEventListener('click', () => {
+    stage.addEventListener('click', () => {
         stress -= 15;
         bar.style.width = stress + '%';
         playSound('click');
         
         cup.style.transform = 'scale(0.9)';
-        setTimeout(() => cup.style.transform = 'scale(1)', 100);
+        stage.style.backgroundColor = '#222'; // Flash
+        setTimeout(() => {
+            cup.style.transform = 'scale(1)';
+            stage.style.backgroundColor = 'transparent';
+        }, 100);
 
         if (stress <= 0) {
             playSound('win');
