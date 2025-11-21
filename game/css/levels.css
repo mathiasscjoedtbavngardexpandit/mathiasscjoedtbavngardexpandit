@@ -1,0 +1,216 @@
+/* game/css/levels.css */
+
+/* Level 1: Customer */
+.l1-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.icon-card i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.icon-card span {
+    font-size: 0.6rem;
+    display: block;
+}
+
+.icon-card.selected {
+    border-color: #00f3ff;
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+.date-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.date-chip {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.date-chip.selected {
+    background: #00f3ff;
+    color: #000;
+}
+
+/* Level 2: Dispatcher */
+.l2-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.map-view {
+    flex: 1;
+    background: #222; /* Map placeholder color */
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(#333 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.map-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff0055;
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+.order-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #00f3ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: grab;
+}
+
+.tech-roster {
+    height: 100px;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.tech-card {
+    min-width: 70px;
+    height: 80px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.tech-card.drag-over {
+    border-color: #00f3ff;
+    background: #333;
+}
+
+.tech-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.tech-status.available { background: #00ff9d; box-shadow: 0 0 5px #00ff9d; }
+.tech-status.busy { background: #ff0055; }
+
+.tech-icon { font-size: 1.2rem; margin-bottom: 5px; }
+.tech-name { font-size: 0.6rem; }
+
+/* Level 3: Technician */
+.l3-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.wiring-board {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wire-socket {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #555;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.wire-socket.red { border-color: #ff4444; }
+.wire-socket.blue { border-color: #4444ff; }
+.wire-socket.green { border-color: #44ff44; }
+
+.wire-socket.connected::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: currentColor;
+    border-radius: 50%;
+}
+
+/* Level 4 & 5: Simple Centered */
+.center-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #00f3ff;
+}

@@ -1,0 +1,105 @@
+/* game/css/components.css */
+
+/* Typography */
+.screen h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.screen p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Buttons */
+.app-btn {
+    background: linear-gradient(45deg, #00f3ff, #00c3cc);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.app-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+}
+
+.app-btn:disabled {
+    background: #333;
+    color: #555;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* Inputs */
+.app-input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.app-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #00f3ff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.app-select, .app-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px;
+    font-family: 'Outfit', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.app-select:focus, .app-input:focus {
+    border-color: #00f3ff;
+}
+
+.app-select option {
+    background: #121212;
+}
+
+/* Cards */
+.app-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-btn {
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
