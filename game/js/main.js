@@ -2,6 +2,19 @@
 window.ExpandITGame = window.ExpandITGame || {};
 
 (function() {
+    const { 
+        renderLevel1, renderLevel2, renderLevel3, renderLevel4, renderLevel5, playSound 
+    } = window.ExpandITGame;
+
+    const screen = document.getElementById('game-screen');
+    const scoreDisplay = document.getElementById('score');  
+    let score = 0;
+    let orderData = {};
+
+    function updateScore(points) {
+        score += points;
+        scoreDisplay.innerText = score;
+    }
 
     function startGame() {
         score = 0;
