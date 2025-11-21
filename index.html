@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias Schjødt-Bavngaard | Software Engineer</title>
+    <meta name="description" content="Portfolio of Mathias Schjødt-Bavngaard - Software Engineer, Frontend/Backend Developer, and System Designer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome if needed, or use SVGs -->
+</head>
+<body>
+    <canvas id="gravity-canvas"></canvas>
+    
+    <nav class="navbar">
+        <div class="logo">MSB</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Mathias <span class="highlight">Schjødt-Bavngaard</span></h1>
+            <h2>Software Engineer & System Designer</h2>
+            <p class="tagline">Building digital experiences with gravity.</p>
+            <a href="#projects" class="cta-button">View Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Software Engineer with a passion for full-stack development and system design. Currently based in Aarhus, Denmark.</p>
+                    <p>When I'm not coding complex IoT systems or designing scalable architectures, you can find me <strong>bouldering</strong> or seeking adrenaline through <strong>bungy jumping</strong>.</p>
+                    <p>I believe in building software that is not only functional but also provides a "party vibe" user experience.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>.NET / C#</h3>
+                        <p>Core Stack</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Angular / React</h3>
+                        <p>Frontend</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Azure / SQL</h3>
+                        <p>Cloud & Data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>System Developer | Software Engineer</h3>
+                        <h4>ExpandIT Mobile DK</h4>
+                        <p>Developing comprehensive solutions for the service and construction industry. Working with ASP Classic, SQL (100+ tables), Ionic, Angular, and .NET/Razor Pages. Integrating with ERP systems like Microsoft Dynamics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Founder | CTO</h3>
+                        <h4>Psykologernes Netværk</h4>
+                        <p>Connecting independent psychologists with companies to improve access to psychological services.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2024 - Jul 2024</div>
+                    <div class="timeline-content">
+                        <h3>Teacher Assistant</h3>
+                        <h4>Aarhus Universitet</h4>
+                        <p>Assisted in Software Design, Backend, Databases, and Frontend Development courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jul 2023 - Feb 2024</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Student Worker</h3>
+                        <h4>Iterator IT</h4>
+                        <p>Full-stack development, working with React, TypeScript, C#, and Azure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Fredagsbarometer -->
+                <article class="project-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Fredagsbarometer</h3>
+                        <p class="project-desc">IoT system to measure and visualize "party vibes" at AU Friday bars. Real-time sensor data (temp, crowd size) displayed on a React web app.</p>
+                        <ul class="tech-stack">
+                            <li>.NET</li>
+                            <li>Azure CosmosDB</li>
+                            <li>React</li>
+                            <li>IoT</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://fredagsbarometer.dk/map" target="_blank" class="btn-link">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Catch-Game -->
+                <article class="project-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Catch-Game</h3>
+                        <p class="project-desc">Classic tag game deployed on a Kubernetes cluster. Focus on scalability, replicas, and infrastructure orchestration.</p>
+                        <ul class="tech-stack">
+                            <li>Go-lang</li>
+                            <li>Kubernetes</li>
+                            <li>ArgoCD</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- ML Rental Prices -->
+                <article class="project-card" data-tilt>
+                    <div class="project-content">
+                        <h3>ML Rental Price Prediction</h3>
+                        <p class="project-desc">Machine Learning model (KNN) to predict rental prices in Aarhus based on property attributes. Visualizes correlations and price trends.</p>
+                        <ul class="tech-stack">
+                            <li>Python</li>
+                            <li>Jupyter</li>
+                            <li>Scikit-learn</li>
+                            <li>Deep Learning</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- AFE Exam Prep -->
+                <article class="project-card" data-tilt>
+                    <div class="project-content">
+                        <h3>Advanced Frontend Prep</h3>
+                        <p class="project-desc">Comprehensive guide and codebase covering advanced frontend topics: SEO, PWA, GraphQL, Native Web Components.</p>
+                        <ul class="tech-stack">
+                            <li>Next.js</li>
+                            <li>Angular</li>
+                            <li>GraphQL</li>
+                            <li>PWA</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/MathiasSchjoedt-Bavngaard/AFE-Eksamen" target="_blank" class="btn-link">View Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Interested in working together or discussing the physics of bouldering?</p>
+            <a href="mailto:contact@example.com" class="cta-button">Say Hello</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mathias-schj%C3%B8dt-bavngaard-15b426aa/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/mathiasscjoedtbavngardexpandit" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mathias Schjødt-Bavngaard. Built with Gravity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
